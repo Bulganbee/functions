@@ -1,10 +1,10 @@
-  // Simple story grammar generator
+  // Simple letter grammar generator
   // I am using an example template that I used for my Computational Form class from https://compform.net/text/ 
   // I am modifying the structure, grammar, and the words to fit with the theme of my project
-  function generateStory() {
+  function generateLetter() {
     // Define grammar rules
     const grammar = {
-        story: [
+        letter: [
             "Once upon a time, {phrase}. Then, {phrase}. Finally, {phrase}, and {phrase}.",
             "In a {place}, {phrase}. Suddenly, {phrase}. In the end, {phrase} and {phrase}."
         ],
@@ -54,22 +54,22 @@
         });
     }
 
-    // Generate and display the story
+    // Generate and display the letter
     try {
-        const story = expand(choose(grammar.story));
-        document.getElementById("story").textContent = story;
+        const letter = expand(choose(grammar.letter));
+        document.getElementById("letter").textContent = letter;
     } catch (error) {
-        console.error("Error generating story:", error);
-        document.getElementById("story").textContent = "Error generating story. Please try again.";
+        console.error("Error generating letter:", error);
+        document.getElementById("letter").textContent = "Error generating letter. Please try again.";
     }
 }
 
 // Add event listeners when DOM is loaded
 document.addEventListener("DOMContentLoaded", function () {
-    // Generate initial story
-    generateStory();
+    // Generate initial letter
+    generateLetter();
 
     // Add click event to generate button
-    document.getElementById("generate").addEventListener("click", generateStory);
+    document.getElementById("generate").addEventListener("click", generateLetter);
 });
   
