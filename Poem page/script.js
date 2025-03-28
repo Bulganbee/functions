@@ -1,43 +1,75 @@
-document.getElementById("generatePoem").addEventListener("click", function () {
-    document.getElementById("poem").innerHTML = generatePoem(); // Use innerHTML for line breaks
+  // Simple story grammar generator
+  // I am using an example template that I used for my Computational Form class from https://compform.net/text/ 
+  // I am modifying the structure, grammar, and the words to fit with the theme of my project
+  function generateStory() {
+    // Define grammar rules
+    const grammar = {
+        story: [
+            "Once upon a time, {phrase}. Then, {phrase}. Finally, {phrase}, and {phrase}.",
+            "In a {place}, {phrase}. Suddenly, {phrase}. In the end, {phrase} and {phrase}."
+        ],
+        phrase: ["{subject} {verb} {object}"],
+        subject: ["{noun}", "{adjective} {noun}"],
+        object: [
+            "{noun}",
+            "{adjective} {noun}",
+            "{adjective} {noun} and {adjective} {noun}"
+        ],
+        place: ["mysterious forest", "quiet village", "sunny meadow", "dark cave"],
+        adjective: [
+            "proud", "small", "forgetful", "handsome", 
+            "comical", "wild", "brave", "curious", 
+            "sleepy", "energetic"
+        ],
+        noun: [
+            "bear", "cat", "dog", "frog", 
+            "goose", "lamb", "rabbit", "wizard", 
+            "knight", "dragon", "fairy"
+        ],
+        verb: [
+            "becomes friends with", 
+            "finds", 
+            "chases", 
+            "plots with", 
+            "discovers", 
+            "helps", 
+            "challenges"
+        ]
+    };
+
+    // Function to get a random item from an array
+    function choose(arr) {
+        return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    // Function to expand the grammar recursively
+    function expand(template) {
+        // Replace placeholders with random selections
+        return template.replace(/\{(\w+)\}/g, (match, key) => {
+            const rule = grammar[key];
+            if (!rule) return match;
+            
+            const picked = choose(rule);
+            return expand(picked);
+        });
+    }
+
+    // Generate and display the story
+    try {
+        const story = expand(choose(grammar.story));
+        document.getElementById("story").textContent = story;
+    } catch (error) {
+        console.error("Error generating story:", error);
+        document.getElementById("story").textContent = "Error generating story. Please try again.";
+    }
+}
+
+// Add event listeners when DOM is loaded
+document.addEventListener("DOMContentLoaded", function () {
+    // Generate initial story
+    generateStory();
+
+    // Add click event to generate button
+    document.getElementById("generate").addEventListener("click", generateStory);
 });
-
-function generatePoem() {
-    const line1 = [
-        "Skyscrapers touch clouds",
-        "Neon lights flicker",
-        "Bridges stretch like arms",
-        "Taxis race like stars",
-        "Subway doors whisper",
-        "Brooklyn Bridge at dawn"
-    ]; // 5 syllables
-
-    const line2 = [
-        "Concrete rivers never rest",
-        "Golden streets hum at midnight",
-        "Billboards blink in silent code",
-        "Footsteps echo down the halls",
-        "City dreams of lost echoes",
-        "A million voices collide"
-    ]; // 7 syllables
-
-    const line3 = [
-        "Moonlight paints the streets",
-        "Faded dreams still burn",
-        "Night swallows the past",
-        "Pigeons claim the dawn",
-        "Hope waits underground",
-        "Wind hums through the glass"
-    ]; // 5 syllables
-
-    // Ensure each line is on a new line
-    return `${sample(line1)}<br>${sample(line2)}<br>${sample(line3)}`;
-}
-
-// Helper function to pick a random element
-function sample(array) {
-    return array[Math.floor(Math.random() * array.length)];
-}
-
-
   
