@@ -5,7 +5,7 @@
     // Define grammar rules
     const grammar = {
         letter: [
-            "Once upon a time, {phrase}. Then, {phrase}. Finally, {phrase}, and {phrase}.",
+            "{start} {terms}, {phrase}. I {verb} for you. Finally, {phrase}, and {phrase}.",
             "In a {place}, {phrase}. Suddenly, {phrase}. In the end, {phrase} and {phrase}."
         ],
         phrase: ["{subject} {verb} {object}"],
@@ -19,6 +19,8 @@
         adjective: [
             "secret", "invisible", "reckless", "strong", "unabashed", "hard", "surfaced", "straightforward", "old", "new", "lasting", "true", "real", "unique", "manifest", "dependent"
         ],
+        terms: ["beloved", "light of my eyes", "sweetheart", "drunken one"],
+        start: ["For my", "Dear"],
         noun: [
             "love", "sky", "veils", "moment", "end", "step", "feet", "world", "self", "heart", "gift", "circle", "lovers", "breast", "Divani", "Shamsi", "Tabriz", "reason", "profit", "midst", "suffering", "millstone", "surface", "self-interest", "gift", "God", "Being", "Mathnawi", "sculptor", "molder", "form", "idol", "spirit", "face", "fire", "soul", "fragrance", "drop", "blood", "earth", "Beloved", "house", "mud", "water", "ruins", "Passion", "medicine", "bough", "elixir", "fatigue", "beauty", "heart", "lips", "water", "life", "talisman", "oneness", "reasoning", "house", "treasure", "coffer", "beginning", "end", "mystery", "lord", "states", "feeling", "month", "year", "moon", "state", "bodies", "spirit"
         ],
