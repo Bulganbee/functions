@@ -15,25 +15,15 @@
             "{adjective} {noun}",
             "{adjective} {noun} and {adjective} {noun}"
         ],
-        place: ["mysterious forest", "quiet village", "sunny meadow", "dark cave"],
+        place: ["Divani", "Shamsi", "Tabriz", "Mathnawi", "earth", "moon", "house"],
         adjective: [
-            "proud", "small", "forgetful", "handsome", 
-            "comical", "wild", "brave", "curious", 
-            "sleepy", "energetic"
+            "secret", "invisible", "reckless", "strong", "unabashed", "hard", "surfaced", "straightforward", "old", "new", "lasting", "true", "real", "unique", "manifest", "dependent"
         ],
         noun: [
-            "bear", "cat", "dog", "frog", 
-            "goose", "lamb", "rabbit", "wizard", 
-            "knight", "dragon", "fairy"
+            "love", "sky", "veils", "moment", "end", "step", "feet", "world", "self", "heart", "gift", "circle", "lovers", "breast", "Divani", "Shamsi", "Tabriz", "reason", "profit", "midst", "suffering", "millstone", "surface", "self-interest", "gift", "God", "Being", "Mathnawi", "sculptor", "molder", "form", "idol", "spirit", "face", "fire", "soul", "fragrance", "drop", "blood", "earth", "Beloved", "house", "mud", "water", "ruins", "Passion", "medicine", "bough", "elixir", "fatigue", "beauty", "heart", "lips", "water", "life", "talisman", "oneness", "reasoning", "house", "treasure", "coffer", "beginning", "end", "mystery", "lord", "states", "feeling", "month", "year", "moon", "state", "bodies", "spirit"
         ],
         verb: [
-            "becomes friends with", 
-            "finds", 
-            "chases", 
-            "plots with", 
-            "discovers", 
-            "helps", 
-            "challenges"
+            "fly", "cause", "fall", "let", "go", "take", "step", "regard", "disregard", "said", "enter", "see", "reach", "feel", "come", "consuming", "proceeds", "died", "risks", "asks", "gambles", "bestows", "gave", "give", "shape", "melt", "rouse", "fill", "look", "want", "throw", "spills", "absorbs", "cherish", "informs", "merge", "participate", "fallen", "leave", "makes", "lops", "renews", "seek", "pours", "drinks", "shattered", "know", "reasoning", "find", "expect", "bids", "wills", "become"
         ]
     };
 
