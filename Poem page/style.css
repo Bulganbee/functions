@@ -7,11 +7,24 @@ body {
 }
 #letter {
     margin: 20px 0;
-    padding: 10px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     border: 1px solid #ddd;
     min-height: 50px;
+    font-size: 24px;
+    line-height: 145%;
 }
 button {
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 20px;
+    background-color: aquamarine;
+}
+button:hover {
+    background-color: rgb(60, 185, 6);
+    color: aliceblue;
 }
