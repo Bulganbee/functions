@@ -1,6 +1,7 @@
 
  // I am using an example template that I used for my Computational Form class from https://compform.net/text/ 
 // I am modifying the structure, grammar, and the words to fit with the theme of my project
+//I've added inputs 
 function generateLetter() {
     // Get input 
     const recipient = document.getElementById("recipient").value || "beloved";
@@ -31,7 +32,7 @@ function generateLetter() {
         ],
         terms: ["beloved", "light of my eyes", "sweetheart", "drunken one"],
         start: ["For my", "Dear"],
-        recipientTerm: [recipientName], // Use the custom recipient term
+        recipientTerm: [recipientName], 
         noun: [
             "love", "sky", "veils", "moment", "end", "step", "feet", "world", "self", "heart", "gift", 
             "circle", "lovers", "breast", "Divani", "Shamsi", "Tabriz", "reason", "profit", "midst", 
@@ -52,7 +53,6 @@ function generateLetter() {
         ]
     };
   
-    // Add custom adjectives to the grammar if provided
     if (customAdjectives.length > 0) {
       // Create a temporary array that combines default and custom adjectives
       const combinedAdjectives = [...grammar.adjective];
@@ -98,6 +98,31 @@ function generateLetter() {
         document.getElementById("letter").textContent = "Error generating letter. Please try again.";
     }
   }
+     let isEditMode = false;
+     let originalText = '';
+     function toggleEditMode() {
+        const letterElement = document.getElementById("letter");
+        
+        if (!isEditMode) {
+            // Enter edit mode
+            originalText = letterElement.textContent;
+            letterElement.setAttribute("contenteditable", "true");
+            letterElement.focus();
+            letterElement.classList.add("editing");
+        } else {
+            // Exit edit mode and save changes
+            letterElement.removeAttribute("contenteditable");
+            letterElement.classList.remove("editing");
+        }
+        
+        isEditMode = !isEditMode;
+        updateEditButton();
+    }
+    // Function to update the edit button text
+        function updateEditButton() {
+        const editButton = document.getElementById("edit");
+        editButton.textContent = isEditMode ? "Save" : "Edit";
+}
   
   // Add event listeners when DOM is loaded
   document.addEventListener("DOMContentLoaded", function () {
@@ -106,6 +131,9 @@ function generateLetter() {
   
     // Add click event to generate button
     document.getElementById("generate").addEventListener("click", generateLetter);
+    // Add click event to edit button
+    document.getElementById("edit").addEventListener("click", toggleEditMode);
+
     
     // Add event listeners for input fields to enable real-time updates
     const inputs = ["recipient", "sender", "recipientName", "adjectives"];
