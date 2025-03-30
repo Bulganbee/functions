@@ -10,8 +10,33 @@
 </head>
 <body>
     <h1>Letter Generator</h1>
-    <div id="letter">Click the button to generate a Letter!</div>
+    
+    <div class="input-container">
+        <div class="input-group">
+            <label for="recipient">Recipient/For:</label>
+            <input type="text" id="recipient" placeholder="Name of recipient">
+        </div>
+        
+        <div class="input-group">
+            <label for="sender">Sender/From:</label>
+            <input type="text" id="sender" placeholder="Your name">
+        </div>
+        
+        <div class="input-group">
+            <label for="recipientName">Term of endearment:</label>
+            <input type="text" id="recipientName" placeholder="e.g. beloved, sweetheart, dear one">
+        </div>
+        
+        <div class="input-group">
+            <label for="adjectives">Three adjectives (comma-separated):</label>
+            <input type="text" id="adjectives" placeholder="e.g. beautiful, kind, thoughtful">
+        </div>
+    </div>
+    
+    <div id="letter-container">
+        <div id="letter">Click the button to generate a Letter!</div>
+    </div>
+    
     <button id="generate">Generate Letter</button>
-
 </body>
 </html>
