@@ -15,21 +15,21 @@ function generateLetter() {
    
       phrase: ["{subject} {verb} {object}"],
       subject: ["{noun}", "{adjective} {noun}"],
-      object: [
-          "{noun}",
-          "{adjective} {noun}",
-          "{adjective} {noun} and {adjective} {noun}"
-      ],
-      place: ["Divani", "Shamsi", "Tabriz", "Mathnawi", "earth", "moon", "house"],
-      adjective: [
-          "secret", "invisible", "reckless", "strong", "unabashed", "hard", "surfaced", "straightforward", 
-          "old", "new", "lasting", "true", "real", "unique", "manifest", "dependent"
-      ],
-      terms: ["beloved", "light of my eyes", "sweetheart", "drunken one"],
-      start: ["For my", "Dear"],
+      // object: [
+      //     "{noun}",
+      //     "{adjective} {noun}",
+      //     "{adjective} {noun} and {adjective} {noun}"
+      // ],
+      // place: ["Divani", "Shamsi", "Tabriz", "Mathnawi", "earth", "moon", "house"],
+      // adjective: [
+      //     "secret", "invisible", "reckless", "strong", "unabashed", "hard", "surfaced", "straightforward", 
+      //     "old", "new", "lasting", "true", "real", "unique", "manifest", "dependent"
+      // ],
+      // terms: ["beloved", "light of my eyes", "sweetheart", "drunken one"],
+      // start: ["For my", "Dear"],
       recipientTerm: [recipientName], 
       noun1: [
-          "presence", "fragrance", "scent", "beauty", "veil", "face", "spirit", "lips", "eyes", "heart", "soul", "breast" 
+          "presence", "fragrance", "scent", "beauty", "veil", "face", "spirit", "lips", "eyes", "heart", "soul", "presence" 
       ],
       noun2: [
         "self", "heart", "gift", "world", "idol", "spirit", "fire", "soul", "oneness", "beginning", "moon", "lord", "god" 
@@ -74,9 +74,8 @@ function generateLetter() {
       return arr[Math.floor(Math.random() * arr.length)];
   }
 
-  // Function to expand the grammar recursively
+  // Function to expand the grammar 
   function expand(template) {
-      // Replace placeholders with random selections
       return template.replace(/\{(\w+)\}/g, (match, key) => {
           const rule = grammar[key];
           if (!rule) return match;
