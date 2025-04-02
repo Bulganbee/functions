@@ -8,9 +8,6 @@ function generateLetter() {
     const sender = document.getElementById("sender").value || "admirer";
     const recipientName = document.getElementById("recipientName").value || "dear one";
     
-    // Get adjectives 
-    const adjInput = document.getElementById("adjectives").value;
-    const customAdjectives = adjInput ? adjInput.split(",").map(adj => adj.trim()) : [];
     
     // Define grammar rules
     const grammar = {
@@ -76,20 +73,7 @@ function generateLetter() {
          //seek, meant to find, stumble upon, cherish, bestow upon
     };
   
-    if (customAdjectives.length > 0) {
-      // Create a temporary array that combines default and custom adjectives
-      const combinedAdjectives = [...grammar.adjective];
-      
-      // Add each custom adjective, avoiding duplicates
-      customAdjectives.forEach(adj => {
-        if (adj && !combinedAdjectives.includes(adj)) {
-          combinedAdjectives.push(adj);
-        }
-      });
-      
-      // Replace the original adjective array with our combined one
-      grammar.adjective = combinedAdjectives;
-    }
+
   
     // Function to get a random item from an array
     function choose(arr) {
@@ -159,7 +143,7 @@ function generateLetter() {
 
     
     // Add event listeners for input fields to enable real-time updates
-    const inputs = ["recipient", "sender", "recipientName", "adjectives"];
+    const inputs = ["recipient", "sender", "recipientName"];
     inputs.forEach(id => {
       const input = document.getElementById(id);
       if (input) {
