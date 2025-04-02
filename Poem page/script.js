@@ -15,7 +15,7 @@ function generateLetter() {
     // Define grammar rules
     const grammar = {
         letter: [
-            "{start} {recipientTerm}, {phrase}. I {verb} for you. Finally, {phrase}, and {phrase}.",
+            "In your {noun1} {recipientTerm}, I {verb} for you. I {verb} for you. Finally, {phrase}, and {phrase}.",
             "In a {place}, {phrase}. Suddenly, {phrase}. In the end, {phrase} and {phrase}."
         ],
         phrase: ["{subject} {verb} {object}"],
@@ -33,18 +33,21 @@ function generateLetter() {
         terms: ["beloved", "light of my eyes", "sweetheart", "drunken one"],
         start: ["For my", "Dear"],
         recipientTerm: [recipientName], 
-        noun: [
-            "love", "sky", "veils", "moment", "end", "step", "feet", "world", "self", "heart", "gift", 
-            "circle", "lovers", "breast", "Divani", "Shamsi", "Tabriz", "reason", "profit", "midst", 
-            "suffering", "millstone", "surface", "self-interest", "gift", "God", "Being", "Mathnawi", 
-            "sculptor", "molder", "form", "idol", "spirit", "face", "fire", "soul", "fragrance", "drop", 
-            "blood", "earth", "Beloved", "house", "mud", "water", "ruins", "Passion", "medicine", "bough", 
-            "elixir", "fatigue", "beauty", "heart", "lips", "water", "life", "talisman", "oneness", 
-            "reasoning", "house", "treasure", "coffer", "beginning", "end", "mystery", "lord", "states", 
-            "feeling", "month", "year", "moon", "state", "bodies", "spirit"
+        noun1: [
+            "presence", "fragrance", "scent", "beauty", "veil", "face", "spirit", "lips", "eyes", "heart", "soul", "breast" 
         ],
+        noun2: [
+          "self", "heart", "gift", "world", "idol", "spirit", "fire", "soul", "oneness", "beginning", "moon", "lord", "god" 
+        ],
+      noun3: [
+        "spark", "being", "oneness", "gift", "love", "sky", "world" 
+        ],
+       noun4: [
+       "spark", "being", "oneness", "gift", "love", "sky", "world" 
+        ],
+      //spark, being, oneness, gift, love, sky, world
         verb: [
-            "fly", "cause", "fall", "let", "go", "take", "step", "regard", "disregard", "said", "enter", 
+            "long", "cause", "fall", "let", "go", "take", "step", "regard", "disregard", "said", "enter", 
             "see", "reach", "feel", "come", "consuming", "proceeds", "died", "risks", "asks", "gambles", 
             "bestows", "gave", "give", "shape", "melt", "rouse", "fill", "look", "want", "throw", "spills", 
             "absorbs", "cherish", "informs", "merge", "participate", "fallen", "leave", "makes", "lops", 
