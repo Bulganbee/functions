@@ -15,9 +15,9 @@ function generateLetter() {
     // Define grammar rules
     const grammar = {
         letter: [
-            "In your {noun1} {recipientTerm}, I {verb} for you. I {verb} for you. Finally, {phrase}, and {phrase}.",
-            "In a {place}, {phrase}. Suddenly, {phrase}. In the end, {phrase} and {phrase}."
+            "{recipientTerm}, In your {noun1}, I find my {noun2}. You are the {noun3} that {verb1} my {noun4} and {verb1} my {noun4}. {phrase1} with you is a {phrase2} to {phrase3}. {phrase4} as the {phrase5}. {phrase6} is the {noun5} we {phrase7}. ",
         ],
+     
         phrase: ["{subject} {verb} {object}"],
         subject: ["{noun}", "{adjective} {noun}"],
         object: [
@@ -43,17 +43,37 @@ function generateLetter() {
         "spark", "being", "oneness", "gift", "love", "sky", "world" 
         ],
        noun4: [
-       "spark", "being", "oneness", "gift", "love", "sky", "world" 
+       "soul", "spirit", "passion", "fire", "heart"
         ],
-      //spark, being, oneness, gift, love, sky, world
-        verb: [
-            "long", "cause", "fall", "let", "go", "take", "step", "regard", "disregard", "said", "enter", 
-            "see", "reach", "feel", "come", "consuming", "proceeds", "died", "risks", "asks", "gambles", 
-            "bestows", "gave", "give", "shape", "melt", "rouse", "fill", "look", "want", "throw", "spills", 
-            "absorbs", "cherish", "informs", "merge", "participate", "fallen", "leave", "makes", "lops", 
-            "renews", "seek", "pours", "drinks", "shattered", "know", "reasoning", "find", "expect", "bids", 
-            "wills", "become"
-        ]
+        noun5: [
+          "truth", "fire", "light", "reason", "guidance"
+           ],
+     
+        verb1: [
+            "lights","guides","touches","embraces","enters","renews","melts","calms","rouses"
+        ],
+        phrase1: [
+            "Every moment", "My days", "Everyday","Moments"
+        ],
+        phrase2: [
+          "bridge", "step closer"
+        ],
+        phrase3: [
+          "heaven", "god", "garden of the soul", "fountain of love"
+        ],
+        phrase4: [
+          "I am yours", "You are mine", "We are one"
+        ],
+        phrase5: [
+          "stars to the night", "moon to the night", "heart to the body"
+        ],
+        phrase6: [
+          "Our reunion", "Our love", "Our meeting", "Our oneness"
+        ],
+        phrase7: [
+          "seek", "meant to find", "stumble upon", "cherish", "bestow upon"
+        ],
+         //seek, meant to find, stumble upon, cherish, bestow upon
     };
   
     if (customAdjectives.length > 0) {
