@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Playwrite+AU+SA:wght@100..400&display=swap');
+
 body {
-    font-family: 'Playfair Display';
+    font-family: "Playwrite AU SA", cursive;
     max-width: 700px;
     margin: 0 auto;
     padding: 20px;
@@ -11,15 +13,18 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
     color: #000000;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
 }
 #recipient {
-    color: #989898;
+    color: #bdbdbd;
 }
 #sender {
-    color: #989898;
+    color: #bdbdbd;
 }
 #recipientName {
-    color: #989898;
+    color: #bdbdbd;
 }
 
 .input-container {
@@ -37,14 +42,14 @@ h1 {
 label {
     display: block;
     margin-bottom: 5px;
-    font-weight: bold;
+    font-weight: medium;
     color: #000000;
 }
 
 input[type="text"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
     border-radius: 4px;
     font-size: 16px;
 }
