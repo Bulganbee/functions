@@ -3,9 +3,9 @@
 
 function generateLetter() {
   // Get input 
-  const recipient = document.getElementById("recipient").value || "beloved";
+  const recipient = document.getElementById("recipient").value || "recipient";
   const sender = document.getElementById("sender").value || "admirer";
-  const recipientName = document.getElementById("recipientName").value || "dear one";
+  const recipientName = document.getElementById("recipientName").value || "Beloved";
   
   // Define grammar rules
   const grammar = {
