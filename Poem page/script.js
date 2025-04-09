@@ -83,6 +83,7 @@ function generateLetter() {
       document.getElementById("letter").textContent = fullLetter;
 
       document.getElementById("letter-container").classList.remove("hidden");
+      document.querySelector(".edit-controls").classList.remove("hidden");
   } catch (error) {
       console.error("Error generating letter:", error);
       document.getElementById("letter").textContent = "Error generating letter. Please try again.";
