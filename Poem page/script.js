@@ -116,6 +116,10 @@ function updateEditButton() {
   const editButton = document.getElementById("edit");
   editButton.textContent = isEditMode ? "Save" : "Edit";
 }
+// Download button
+function downloadLetter() {
+    const letterContent = document.getElementById("letter").textContent;
+    const recipient = document.getElementById("recipient").value || "beloved";
 
 // Add event listeners when DOM is loaded
 document.addEventListener("DOMContentLoaded", function () {
