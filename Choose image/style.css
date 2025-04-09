@@ -6,7 +6,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     color: #000000;
-    background-color: #ececec;
+    background-color: #e1d6c7;
 }
 h1 {
     font-size: 24px;
@@ -51,11 +51,19 @@ img {
     object-fit: cover;
 }
 img.selected {
-    border: 3px solid #296df4;
+    border: 3px solid #673d06;
 }
 img:hover {
     transform: scale(1.03);
 }
 button:hover:not([disabled]) {
     background-color: #5d4037;
+}
+@media (max-width:450px) {
+    img {
+        max-width: 70%;
+    }
+    main {
+        padding: 5px;
+    }
 }
