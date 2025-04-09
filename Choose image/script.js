@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 			localStorage.setItem('selectedImage', this.src);
             localStorage.setItem('selectedImageAlt', this.alt);
+    
         });
     });
 });
