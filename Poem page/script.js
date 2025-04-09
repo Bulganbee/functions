@@ -142,6 +142,15 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       console.error("Print button not found in DOM");
     }
+    // Image selection from previous page
+    const selectedImageSrc = localStorage.getItem('selectedImage');
+if (selectedImageSrc) {
+    // Create an image element with the selected image
+    const selectedImg = document.createElement('img');
+    selectedImg.src = selectedImageSrc;
+    selectedImg.alt = localStorage.getItem('selectedImageAlt') || 'Selected image';
+    document.querySelector('#selectedImageContainer').appendChild(selectedImg);
+}
   // Add event listeners for input fields to enable real-time updates
   const inputs = ["recipient", "sender", "recipientName"];
   inputs.forEach(id => {
