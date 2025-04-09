@@ -116,10 +116,12 @@ function updateEditButton() {
   const editButton = document.getElementById("edit");
   editButton.textContent = isEditMode ? "Save" : "Edit";
 }
-// Download button
-function downloadLetter() {
-    const letterContent = document.getElementById("letter").textContent;
-    const recipient = document.getElementById("recipient").value || "beloved";
+
+function printLetter() {
+    console.log("Print button clicked"); 
+    window.print();
+  }
+
 
 // Add event listeners when DOM is loaded
 document.addEventListener("DOMContentLoaded", function () {
@@ -131,7 +133,14 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("edit").addEventListener("click", toggleEditMode);
   
   document.getElementById("regenerate").addEventListener("click", generateLetter);
-  
+    //Event listener for print
+    const printBtn = document.getElementById("print");
+    if (printBtn) {
+      printBtn.addEventListener("click", printLetter);
+      console.log("Print button listener added");
+    } else {
+      console.error("Print button not found in DOM");
+    }
   // Add event listeners for input fields to enable real-time updates
   const inputs = ["recipient", "sender", "recipientName"];
   inputs.forEach(id => {
