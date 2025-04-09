@@ -15,18 +15,7 @@ function generateLetter() {
    
       phrase: ["{subject} {verb} {object}"],
       subject: ["{noun}", "{adjective} {noun}"],
-      // object: [
-      //     "{noun}",
-      //     "{adjective} {noun}",
-      //     "{adjective} {noun} and {adjective} {noun}"
-      // ],
-      // place: ["Divani", "Shamsi", "Tabriz", "Mathnawi", "earth", "moon", "house"],
-      // adjective: [
-      //     "secret", "invisible", "reckless", "strong", "unabashed", "hard", "surfaced", "straightforward", 
-      //     "old", "new", "lasting", "true", "real", "unique", "manifest", "dependent"
-      // ],
-      // terms: ["beloved", "light of my eyes", "sweetheart", "drunken one"],
-      // start: ["For my", "Dear"],
+      
       recipientTerm: [recipientName], 
       noun1: [
           "presence", "fragrance", "scent", "beauty", "veil", "face", "spirit", "lips", "eyes", "heart", "soul", "presence" 
