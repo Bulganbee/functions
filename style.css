@@ -41,7 +41,6 @@ main {
             width: 30vh;
             height: 40vh;
             object-fit: cover; 
-           margin: 8px;
     }
     main {
         margin-top: 40px;
