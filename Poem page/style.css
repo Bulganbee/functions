@@ -4,7 +4,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     color: #000000;
-    background-color: #FCFCF0;
+    background-color: #ececec;
 }
 
 h1 {
@@ -24,10 +24,10 @@ h1 {
 
 .input-container {
     background-color: #fff;
-    border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
+    box-shadow: 0 4px 8px rgba(11, 14, 22, 0.08);
 }
 
 .input-group {
@@ -55,7 +55,7 @@ input[type="text"] {
     /* border-radius: 8px; */
     padding: 30px;
     margin-bottom: 20px;
-    min-height: 200px;
+    min-height: 400px;
     white-space: pre-line;
     line-height: 1.6;
     font-size: 18px;
@@ -106,4 +106,32 @@ button:hover {
     max-width: 100%;
     max-height: 300px;
     border-radius: 8px;
+}
+
+@media print {
+    .input-container {
+        display: none;
+    }
+    #first-label {
+        display: none;
+    }
+    #generate {
+        display: none;
+    }
+    #edit {
+        display: none;
+    }
+    #print {
+        display: none;
+    }
+    #letter-container {
+        background-color: #fff;
+        padding: 0px;
+        min-height: 400px;
+        white-space: pre-line;
+        line-height: 1.6;
+        font-size: 24px;
+        box-shadow: 0 0px 0px rgba(11, 14, 22, 0.08);
+    }
+
 }
