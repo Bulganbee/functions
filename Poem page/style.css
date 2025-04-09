@@ -66,6 +66,7 @@ input[type="text"] {
     font-size: 18px;
     font-style: normal;
     box-shadow: 0 4px 8px rgba(11, 14, 22, 0.08);
+    
 }
 
 #letter {
@@ -137,6 +138,14 @@ button:hover {
         line-height: 1.6;
         font-size: 24px;
         box-shadow: 0 0px 0px rgba(11, 14, 22, 0.08);
+    }
+    body {
+        font-family: "Playwrite AU SA", cursive;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 20px;
+        color: #000000;
+        background-color: #ffffff;
     }
 
 }
