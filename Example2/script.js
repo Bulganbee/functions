@@ -90,6 +90,39 @@ function generateLetter() {
         document.getElementById("letter").textContent = "Error generating letter. Please try again.";
     }
   }
+  let isEditMode = false;
+let originalText = '';
+
+function toggleEditMode() {
+  const letterElement = document.getElementById("letter");
+  
+  if (!isEditMode) {
+      // Enter edit mode
+      originalText = letterElement.textContent;
+      letterElement.setAttribute("contenteditable", "true");
+      letterElement.focus();
+      letterElement.classList.add("editing");
+  } else {
+      // Exit edit mode and save changes
+      letterElement.removeAttribute("contenteditable");
+      letterElement.classList.remove("editing");
+  }
+  
+  isEditMode = !isEditMode;
+  updateEditButton();
+}
+
+// Function to update the edit button text
+function updateEditButton() {
+  const editButton = document.getElementById("edit");
+  editButton.textContent = isEditMode ? "Save" : "Edit";
+}
+
+function printLetter() {
+    console.log("Print button clicked"); 
+    window.print();
+  }
+
   
   
   // Add event listeners when DOM is loaded
