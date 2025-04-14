@@ -1,5 +1,7 @@
 // I am using an example template that I used for my Computational Form class from https://compform.net/text/ 
 // I am modifying the structure, grammar, and the words to fit with the theme of my project
+// I've re-structed the letter and chose words from Rumi's poems 
+// I've added inputs, edit button, and print button functions and event listeners
 
 function generateLetter() {
   // Get input 
@@ -142,15 +144,23 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       console.error("Print button not found in DOM");
     }
-    // Image selection from previous page
+    // For showing selected image from previous page
     const selectedImageSrc = localStorage.getItem('selectedImage');
-if (selectedImageSrc) {
-    // Create an image element with the selected image
-    const selectedImg = document.createElement('img');
-    selectedImg.src = selectedImageSrc;
-    selectedImg.alt = localStorage.getItem('selectedImageAlt') || 'Selected image';
-    document.querySelector('#selectedImageContainer').appendChild(selectedImg);
-}
+    if (selectedImageSrc) {
+      // Image element
+      const selectedImg = document.createElement('img');
+      selectedImg.src = selectedImageSrc;
+      selectedImg.alt = localStorage.getItem('selectedImageAlt') || 'Selected image';
+      selectedImg.className = 'selected-image'; 
+      // selected image container
+      const container = document.querySelector('#selectedImageContainer');
+      if (container) {
+        container.innerHTML = '';
+        container.appendChild(selectedImg);
+        console.log("Image added to container");
+      } 
+    } 
+
   // Add event listeners for input fields to enable real-time updates
   const inputs = ["recipient", "sender", "recipientName"];
   inputs.forEach(id => {

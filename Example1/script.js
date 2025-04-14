@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
+
+  document.addEventListener('DOMContentLoaded', function() {
     // Get images and button
     const images = document.querySelectorAll('#images img');
     const nextButton = document.querySelector('button');

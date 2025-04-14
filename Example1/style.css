@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Playwrite+AU+SA:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Playwrite+AU+SA:wght@100..400&display=swap');
+
+body {
+    font-family: "Playwrite AU SA", cursive;
+    
+    margin: 0 auto;
+    padding: 20px;
+    color: #000000;
+    background-color: #e1d6c7;
+}
+h1 {
+    font-size: 24px;
+    margin: 20px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 24px;
+    background-color: #795548;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button[disabled] {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+button:hover {
+    background-color: #5d4037;
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+#images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+img {
+    max-width: 30%;
+    padding: 5px;
+    object-fit: cover;
+}
+img.selected {
+    border: 3px solid #673d06;
+}
+img:hover {
+    transform: scale(1.03);
+}
+button:hover:not([disabled]) {
+    background-color: #5d4037;
+}
+
+@media (max-width:450px) {
+    img {
+        max-width: 70%;
+    }
+    main {
+        padding: 5px;
+    }
+}
+
