@@ -13,9 +13,10 @@ body {
     background-size: 150vw 100vh;
 } */
 h1 {
-    font-size: 24px;
-    /* margin: 20px; */
-    margin-top: 8%;
+    font-size: 22px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #ffffff;
     position: absolute;
     z-index: 100;
@@ -47,7 +48,7 @@ img {
     background-size: 60vw 50vh;
     width: 60vw;
     height: 50vh;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: relative;
