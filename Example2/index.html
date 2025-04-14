@@ -9,7 +9,34 @@
     <title>Letter Generator</title>
 </head>
 <body>
-    <div id="selectedImageContainer" class="image-container"></div>
+    <h1 id="first-label">Generate a love letter</h1>
+    <div class="input-container">
+        <div class="input-group">
+            <label for="recipient">For:</label>
+            <input type="text" id="recipient" placeholder="Name of recipient">
+        </div>
+        
+        <div class="input-group">
+            <label for="sender">From:</label>
+            <input type="text" id="sender" placeholder="Your name">
+        </div>
+        
+        <div class="input-group">
+            <label for="recipientName">Term of endearment (optional):</label>
+            <input type="text" id="recipientName" placeholder="e.g. beloved, sweetheart, dear one">
+        </div>
+        
+    </div>
+    <button id="generate">Generate Letter</button>
+    
+    <div id="letter-container">
+        <div id="letter">Click the button to generate a Letter!</div>
+        <div class="edit-controls hidden">
+            <button id="edit">Edit</button>
+            <button id="print" onclick="window.print()">Print</button>
+        </div>
+        <div id="selectedImageContainer" class="image-container"></div>
+    </div>
     </div>
 </body>
 </html>
