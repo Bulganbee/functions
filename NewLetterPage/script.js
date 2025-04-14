@@ -90,26 +90,46 @@ function generateLetter() {
         document.getElementById("letter").textContent = "Error generating letter. Please try again.";
     }
   }
-  let isEditMode = false;
-let originalText = '';
 
-function toggleEditMode() {
-  const letterElement = document.getElementById("letter");
+    let isEditMode = false;
+    let originalText = '';
+
+    function toggleEditMode() {
+    const letterElement = document.getElementById("letter");
   
-  if (!isEditMode) {
+     if (!isEditMode) {
       // Enter edit mode
       originalText = letterElement.textContent;
       letterElement.setAttribute("contenteditable", "true");
       letterElement.focus();
       letterElement.classList.add("editing");
-  } else {
+     } else {
       // Exit edit mode and save changes
       letterElement.removeAttribute("contenteditable");
       letterElement.classList.remove("editing");
-  }
+    }
   
   isEditMode = !isEditMode;
   updateEditButton();
+}
+
+function validateInputs() {
+    const recipient = document.getElementById("recipient").value.trim();
+    const sender = document.getElementById("sender").value.trim();
+    
+    // Generate button
+    const generateButton = document.getElementById("generate");
+    
+    // Check for required inputs
+    if (recipient && sender) {
+        // Enable the button if both inputs filled
+        generateButton.disabled = false;
+        generateButton.classList.remove("disabled");
+    } else {
+        // Disable the button if required input is empty
+        generateButton.disabled = true;
+        generateButton.classList.add("disabled");
+    }
 }
 
 // Function to update the edit button text
@@ -143,6 +163,15 @@ function printLetter() {
         console.log("Image added to container");
       } 
     } 
+    // Disabled generate button before putting input for and from
+    const generateButton = document.getElementById("generate");
+    generateButton.disabled = true;
+    generateButton.classList.add("disabled");
+    
+    // Event listeners to input fields for validation
+    document.getElementById("recipient").addEventListener("input", validateInputs);
+    document.getElementById("sender").addEventListener("input", validateInputs);
+    
     // Add click event to generate button
     document.getElementById("generate").addEventListener("click", generateLetter);
     // Add click event to edit button

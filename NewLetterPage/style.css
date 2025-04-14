@@ -53,6 +53,16 @@ input[type="text"] {
     border-radius: 4px;
     font-size: 16px;
 }
+button.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: #9b9b9b;
+}
+.input-group label[for="recipient"]::after,
+.input-group label[for="sender"]::after {
+    content: " *"; 
+    color: red;
+}
 
 #letter-container {
     background-color: #fff;
