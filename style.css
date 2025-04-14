@@ -6,7 +6,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     color: #000000;
-    background-color: #e1d6c7;
+    background-color: #c6a981;
 }
 h1 {
     font-size: 24px;
@@ -14,6 +14,10 @@ h1 {
 }
 
 button {
+    position: absolute; 
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     display: block;
     margin: 0 auto;
     padding: 12px 24px;
@@ -26,17 +30,25 @@ button {
 }
 img {
     box-shadow: 0 4px 8px rgba(11, 14, 22, 0.08);
+    display: none;
 }
 
 button:hover {
     background-color: #5d4037;
 }
 main {
-    padding: 20px;
-    text-align: center;
+    width: 80vw;
+    height: 80vh;
+    background-color: #5d4037;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #ddd;
+    
 }
 
-@media (max-width:450px) {
+/* @media (max-width:450px) {
     img {
             width: 30vh;
             height: 40vh;
@@ -50,4 +62,4 @@ main {
         max-width: 100vh;
         padding: 0;
     }
-}
+} */
