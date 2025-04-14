@@ -142,11 +142,13 @@ function printLetter() {
     console.log("Print button clicked"); 
     window.print();
   }
-
-  
-  
   // Add event listeners when DOM is loaded
   document.addEventListener("DOMContentLoaded", function () {
+    //hide the letter container before pressing on generate button
+    const letterContainer = document.getElementById("letter-container");
+    if (letterContainer) {
+        letterContainer.classList.add("hidden");
+    }
     // For showing selected image from previous page
     const selectedImageSrc = localStorage.getItem('selectedImage');
     if (selectedImageSrc) {

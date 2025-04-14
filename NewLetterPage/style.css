@@ -8,6 +8,9 @@ body {
     color: #000000;
     background-color: #e1d6c7;
 }
+.hidden {
+    display: none;
+}
 
 h1 {
     text-align: center;
