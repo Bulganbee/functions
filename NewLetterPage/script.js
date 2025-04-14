@@ -127,7 +127,6 @@ function printLetter() {
   
   // Add event listeners when DOM is loaded
   document.addEventListener("DOMContentLoaded", function () {
-   
     // For showing selected image from previous page
     const selectedImageSrc = localStorage.getItem('selectedImage');
     if (selectedImageSrc) {
@@ -144,6 +143,28 @@ function printLetter() {
         console.log("Image added to container");
       } 
     } 
+    // Add click event to generate button
+    document.getElementById("generate").addEventListener("click", generateLetter);
+    // Add click event to edit button
+    document.getElementById("edit").addEventListener("click", toggleEditMode);
+    document.getElementById("regenerate").addEventListener("click", generateLetter);
+    //Event listener for print
+    const printBtn = document.getElementById("print");
+    if (printBtn) {
+    printBtn.addEventListener("click", printLetter);
+    console.log("Print button listener added");
+     } else {
+    console.error("Print button not found in DOM");
+     }
+     // Event listeners for input fields to enable real-time updates
+     const inputs = ["recipient", "sender", "recipientName"];
+     inputs.forEach(id => {
+      const input = document.getElementById(id);
+      if (input) {
+          input.addEventListener("input", function() {
+          });
+      }
+  });
 
 });
 
