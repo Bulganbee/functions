@@ -85,6 +85,11 @@ function generateLetter() {
   
         document.getElementById("letter-container").classList.remove("hidden");
         document.querySelector(".edit-controls").classList.remove("hidden");
+        // added a scrollIntoView function for the letter
+        setTimeout(() => {
+            const letterContainer = document.getElementById("letter-container");
+            letterContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
     } catch (error) {
         console.error("Error generating letter:", error);
         document.getElementById("letter").textContent = "Error generating letter. Please try again.";
