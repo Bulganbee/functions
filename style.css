@@ -73,18 +73,50 @@ main {
     
 }
 
-/* @media (max-width:450px) {
+@media (min-width:550px) {
     img {
             width: 30vh;
             height: 40vh;
             object-fit: cover; 
     }
+    h1 {
+        font-size: 32px;
+        top: 8%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        color: #ffffff;
+        position: absolute;
+        z-index: 100;
+    }
     main {
-        margin-top: 40px;
-        padding: 5px;
+        width: 40vw;
+        height: 80vh;
+        background-image: url("resources/fds.png");
+        background-repeat: no-repeat;
+        background-size: 70vw 90vh;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 3px solid #dfc271;
+        
+    }
+    #main-title {
+        background-image: url('resources/ad.jpg');
+        /* filter: brightness(90%); */
+        background-repeat: no-repeat;
+        background-size: 20vw 55vh;
+        width: 20vw;
+        height: 55vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: relative;
+        border: 3px solid #dfc271;
+        
     }
     body {
         max-width: 100vh;
         padding: 0;
     }
-} */
+}
