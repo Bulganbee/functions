@@ -2,7 +2,6 @@
 // I am modifying the structure, grammar, and the words to fit with the theme of my project
 // I've re-structed the letter and chose words from Rumi's poems 
 // I've added inputs, edit button, and print button functions and event listeners
-
 function generateLetter() {
   // Get input 
   const recipient = document.getElementById("recipient").value || "recipient";
