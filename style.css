@@ -30,7 +30,7 @@ button {
     display: block;
     margin: 0 auto;
     padding: 12px 24px;
-    background-color: #024E53;
+    background-color: #795548;
     color: white;
     border: none;
     border-radius: 3px;
@@ -45,8 +45,8 @@ img {
     background-image: url('resources/ad.jpg');
     /* filter: brightness(90%); */
     background-repeat: no-repeat;
-    background-size: 60vw 50vh;
-    width: 60vw;
+    background-size: 65vw 50vh;
+    width: 65vw;
     height: 50vh;
     top: 50%;
     left: 50%;
