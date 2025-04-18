@@ -118,8 +118,8 @@ button:hover {
 }
 .edit-controls {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    align-items: flex-start;
+    gap: 0px;
     margin-top: 15px;
 }
 
