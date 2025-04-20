@@ -16,7 +16,7 @@ h1 {
     transform: translateX(-50%);
     font-size: 22px;
     margin: 0;
-    margin-top: 14px;
+    margin-top: 50px;
     width: 100%;
    
 }
@@ -29,9 +29,11 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 5px 44px;
     box-sizing: border-box;
     z-index: 1000;
+    padding: 20px;
+    padding-bottom: 44px;
+    text-align: center;
 }
 
 #goback {
@@ -39,8 +41,8 @@ h1 {
     color: #674C2F;
     top: 0;
     left: 0;
-    padding-top: 15px;
-    padding-left: 20px;
+    padding-top: 30px;
+    padding-left: 14px;
     font-size: 24px;
     cursor: pointer;
 }
@@ -56,12 +58,12 @@ h1 {
 #progress-one {
     display: flex;
     gap: 10px;
-    width: 100vw;
+    width: 90vw;
     justify-content: center;
     align-items: center;
 }
 p {
-    font-size: 14px;
+    font-size: 13px;
     color: #674C2F;
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
@@ -75,7 +77,6 @@ p {
     
 }
 
-
 button {
     display: block;
     margin: 0 auto;
@@ -86,7 +87,7 @@ button {
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
-    bottom: 5px;
+    bottom: 10px;
     position: fixed;
     align-items: center;
     width: 90vw;
@@ -117,10 +118,9 @@ main {
     margin-top: 70px;
 }
 img {
-    max-width: 30%;
+    max-width: 70%;
     padding: 5px;
     object-fit: cover;
-    /* box-shadow: 0 4px 8px rgba(22, 23, 24, 0.08); */
 }
 img.selected {
     border: 3px solid #674C2F;
@@ -132,12 +132,39 @@ button:hover:not([disabled]) {
     background-color: #674C2F;
 }
 
-@media (max-width:450px) {
+@media (min-width:850px) {
     img {
-        max-width: 70%;
+        max-width: 20%;
+        display: flex;
+	    /* aspect-ratio: 14 / 9; */
+	    object-fit: cover;
+	    overflow-y: hidden;
+	    overflow: clip;
     }
     main {
         padding: 5px;
     }
+    button {
+        width: 40vw;
+        bottom: 30px;
+    }
+    #progress-one {
+        display: flex;
+        width: 60vw;
+        margin: 0 auto;
+    }
+    #progress {
+        background-color: #E0AC74;
+        height: 3px;
+        width: 60vw;
+        top: 0;
+        position: relative;
+        align-items: center;
+        box-sizing: content-box;
+        margin: 0 auto;
+    }
+
+
+    
 }
 
