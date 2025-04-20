@@ -29,18 +29,19 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 5px 20px;
+    padding: 0px 5px 44px;
     box-sizing: border-box;
     z-index: 1000;
 }
 
 #goback {
+    position: absolute;
     color: #674C2F;
     top: 0;
     left: 0;
+    padding-top: 15px;
+    padding-left: 20px;
     font-size: 24px;
-    background-color: transparent;
-    border: none;
     cursor: pointer;
 }
 
