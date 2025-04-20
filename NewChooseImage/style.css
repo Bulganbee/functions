@@ -95,13 +95,13 @@ button {
     transform: translateX(-50%);
 }
 button[disabled] {
-    background-color: #cccccc;
+    background-color: #D2BBA1;
     color: #666666;
     cursor: not-allowed;
 }
 
 button:hover {
-    background-color: #5d4037;
+    background-color: #8f8478;
 }
 main {
     padding: 20px;
@@ -113,22 +113,23 @@ main {
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
+    margin-top: 70px;
 }
 img {
     max-width: 30%;
     padding: 5px;
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(22, 23, 24, 0.08);
+    /* box-shadow: 0 4px 8px rgba(22, 23, 24, 0.08); */
 }
 img.selected {
-    border: 3px solid #673d06;
+    border: 3px solid #674C2F;
 }
 img:hover {
     transform: scale(1.03);
 }
 button:hover:not([disabled]) {
-    background-color: #5d4037;
+    background-color: #674C2F;
 }
 
 @media (max-width:450px) {
