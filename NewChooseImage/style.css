@@ -86,6 +86,13 @@ button {
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
+    bottom: 5px;
+    position: fixed;
+    align-items: center;
+    width: 90vw;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
 }
 button[disabled] {
     background-color: #cccccc;
