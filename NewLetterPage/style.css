@@ -53,8 +53,9 @@ button.disabled {
 }
 
 #letter-container {
+    position: relative;
     background-color: #fff;
-    padding: 30px;
+    padding: 20px;
     margin-bottom: 20px;
     min-height: 400px;
     white-space: pre-line;
@@ -62,7 +63,19 @@ button.disabled {
     font-size: 18px;
     font-style: normal;
     box-shadow: 0 4px 8px rgba(11, 14, 22, 0.08);
-    
+}
+#edit {
+    margin: 1px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    color: #674C2F;
+    border: 1px solid #555;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    padding: 6px 12px;
+    cursor: pointer;
 }
 
 #letter {
@@ -96,7 +109,19 @@ button.disabled {
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 200;
 }
+ button {
+    margin: 0 auto;
+    padding: 12px 24px;
+    background-color: #795548;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    bottom: 10px;
+ }
 
 
 button:hover {
@@ -177,10 +202,7 @@ p {
     
 }
 
-#edit {
-    margin: 1px;
-    background-color: #989898;
-}
+
 .edit-controls {
     display: flex;
     align-items: flex-start;
