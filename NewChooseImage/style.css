@@ -16,6 +16,7 @@ h1 {
     transform: translateX(-50%);
     font-size: 22px;
     margin: 0;
+    margin-top: 14px;
     width: 100%;
    
 }
@@ -24,7 +25,7 @@ h1 {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #7b694e;
+    background-color: #F6DBB2;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,15 +47,17 @@ h1 {
 #progress {
     background-color: #E0AC74;
     height: 3px;
-    width: 300px;
+    width: 80vw;
     top: 0;
     position: relative;
     box-sizing: content-box;
 }
 #progress-one {
     display: flex;
-    align-items: center;
     gap: 10px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
 }
 p {
     font-size: 14px;
