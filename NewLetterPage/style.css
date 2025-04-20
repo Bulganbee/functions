@@ -1,22 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Playwrite+AU+SA:wght@100..400&display=swap');
 
-
 .hidden {
     display: none;
 }
-
 #recipient {
-    color: #bdbdbd;
+    color: #383838;
 }
 #sender {
-    color: #bdbdbd;
+    color: #383838;
 }
 #recipientName {
-    color: #bdbdbd;
+    color: #383838;
 }
 
 .input-container {
-    background-color: #fff;
+    background-image: url("../resources/paper.jpg");
     padding: 20px;
     margin-top: 70px;
     margin-bottom: 20px;
@@ -37,7 +35,7 @@ label {
 input[type="text"] {
     width: 100%;
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #383838;;
     border-radius: 4px;
     font-size: 16px;
 }
@@ -54,7 +52,7 @@ button.disabled {
 
 #letter-container {
     position: relative;
-    background-color: #fff;
+    background-image: url("../resources/paper.jpg");
     padding: 20px;
     margin-bottom: 20px;
     min-height: 400px;
@@ -76,6 +74,27 @@ button.disabled {
     z-index: 10;
     padding: 6px 12px;
     cursor: pointer;
+}
+#print {
+    background-color: #281D10;
+ }
+ #print:hover {
+    background-color: #9b5f24;
+ }
+ .edit-controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    justify-content: end;
+    padding-bottom: 70px;
+}
+
+.edit-controls.hidden {
+    display: none;
+}
+
+button:hover {
+    background-color: #5d4037;
 }
 
 #letter {
@@ -122,20 +141,9 @@ button.disabled {
     cursor: pointer;
     bottom: 10px;
  }
- #print {
-    background-color: #281D10;
- }
- #print:hover {
-    background-color: #9b5f24;
- }
-
-
-button:hover {
-    background-color: #5d4037;
-}
+ 
 body {
     font-family: "Playwrite AU SA", cursive;
-    
     margin: 0 auto;
     padding: 20px;
     color: #000000;
@@ -205,20 +213,6 @@ p {
     width: 100%;
     height: 100%;
     transition: width 0.3s ease;
-    
-}
-
-
-.edit-controls {
-    display: flex;
-    align-items: flex-start;
-    gap: 0px;
-    margin-top: 15px;
-    margin-bottom: 150px;
-}
-
-.edit-controls.hidden {
-    display: none;
 }
 #selectedImageContainer {
     margin: 20px auto;
