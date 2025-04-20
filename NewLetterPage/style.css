@@ -122,6 +122,12 @@ button.disabled {
     cursor: pointer;
     bottom: 10px;
  }
+ #print {
+    background-color: #281D10;
+ }
+ #print:hover {
+    background-color: #9b5f24;
+ }
 
 
 button:hover {
