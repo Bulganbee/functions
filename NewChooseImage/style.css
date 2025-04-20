@@ -8,13 +8,69 @@ body {
     margin: 0 auto;
     padding: 20px;
     color: #000000;
-    background-color: #c6a981;
+    background-color: #F6DBB2;
 }
 h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22px;
+    margin: 0;
+    width: 100%;
+   
+}
+#topdiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #7b694e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5px 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+#goback {
+    color: #674C2F;
+    top: 0;
+    left: 0;
     font-size: 24px;
-    margin: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#progress {
+    background-color: #E0AC74;
+    height: 3px;
+    width: 300px;
+    top: 0;
+    position: relative;
+    box-sizing: content-box;
+}
+#progress-one {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+p {
+    font-size: 14px;
+    color: #674C2F;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+#progress-fill {
+    display: block;
+    background-color: #674C2F;
+    width: 50%;
+    height: 100%;
+    transition: width 0.3s ease;
     
 }
+
 
 button {
     display: block;

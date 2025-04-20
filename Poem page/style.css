@@ -17,6 +17,20 @@ h1 {
     font-style: normal;
     font-size: 30px;
 }
+#progressbar {
+    width: 100%;
+    background-color: #946959;
+    border-radius: 20px;
+    z-index: 100;
+    position: sticky;
+}
+#slider {
+    width: 100%;
+    height: 10px;
+    background-color: #5d4037;
+    border-radius: 20px;
+}
+
 #recipient {
     color: #bdbdbd;
 }
