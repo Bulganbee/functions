@@ -61,7 +61,7 @@ button.disabled {
     font-style: normal;
 }
 #edit {
-    background-color: transparent;
+    background-color: #eec397;
     position: absolute;
     color: #000000;
     border: 1.5px solid #555;
@@ -88,18 +88,22 @@ button.disabled {
   .edit-controls {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: end;
-    justify-content: end;
     padding-bottom: 70px;
     text-align: center;
+   
 }
 .edit-controls button {
     margin: 0;
 }
  #homepage {
     background-color: #161008;
-    width: 80%;
+    width: 75%;
     margin-left: 5vw;
+    font-size: 14px;
+ }
+ #print {
+    background-color: #161008;
+    width: 75%;
     font-size: 14px;
  }
 
@@ -311,16 +315,15 @@ p {
      }
     #print {
         background-color: #161008;
-        position:relative;
-        margin-top:10px;
         width: 20%;
         font-size: 14px;
      }
     .edit-controls {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        align-items: end;
         padding-bottom: 70px;
-        text-align: center;
+        text-align: end;
     }
 }
 
