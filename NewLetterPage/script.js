@@ -197,6 +197,7 @@ function printLetter() {
      } else {
     console.error("Print button not found in DOM");
      }
+     
      // Event listeners for input fields to enable real-time updates
      const inputs = ["recipient", "sender", "recipientName"];
      inputs.forEach(id => {

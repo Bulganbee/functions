@@ -1,20 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Playwrite+AU+SA:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 
 .hidden {
     display: none;
 }
-#recipient {
-    color: #383838;
-}
-#sender {
-    color: #383838;
-}
-#recipientName {
-    color: #383838;
-}
-
 .input-container {
-    background-image: url("../resources/paper.jpg");
+    background-color: #fbedd9;
     padding: 20px;
     margin-top: 70px;
     margin-bottom: 20px;
@@ -30,14 +21,21 @@ label {
     margin-bottom: 5px;
     font-weight: medium;
     color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
 }
 
 input[type="text"] {
     width: 100%;
     padding: 10px;
-    border-bottom: 1px solid #383838;;
-    border-radius: 4px;
-    font-size: 16px;
+    border-bottom: 1px solid #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: #9b9b9b;
+}
+
+input[type="text"]:not(:placeholder-shown) {
+    color: #000000; 
 }
 button.disabled {
     opacity: 0.6;
@@ -67,18 +65,18 @@ button.disabled {
     height: 40px;
     background-color: transparent;
     position: absolute;
-    color: #674C2F;
+    color: #000000;
     border: 1px solid #555;
-    top: 10px;
-    right: 10px;
+    top: 40px;
+    right: 20px;
     z-index: 10;
     padding: 6px 12px;
     cursor: pointer;
 }
 #edit.save-mode {
-    background-color: #674C2F; 
+    background-color: #00a519; 
     color: white;
-    border-color: #674C2F;
+    border-color: transparent;
   }
 #print {
     background-color: #281D10;
@@ -145,10 +143,12 @@ button:hover {
     font-size: 16px;
     cursor: pointer;
     bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
  }
  
 body {
-    font-family: "Playwrite AU SA", cursive;
+    font-family: "Italianno", cursive;
     margin: 0 auto;
     padding: 20px;
     color: #000000;
@@ -158,9 +158,9 @@ h1 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 22px;
+    font-size: 45px;
     margin: 0;
-    margin-top: 50px;
+    margin-top: 60px;
     width: 100%;
    
 }
@@ -176,7 +176,7 @@ h1 {
     box-sizing: border-box;
     z-index: 1000;
     padding: 20px;
-    padding-bottom: 44px;
+    padding-bottom: 54px;
     text-align: center;
 }
 
@@ -228,6 +228,60 @@ p {
     max-height: 300px;
     border-radius: 8px;
 }
+@media (min-width:850px) {
+    .input-container {
+        padding: 20px;
+        margin: 0 auto;
+        width: 50vw;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+    #letter-container {
+        padding: 32px;
+        margin: 0 auto;
+        width: 50vw;
+        line-height: 146%;
+        font-size: 32px;
+    }
+    #edit {
+        background-color: transparent;
+        position: absolute;
+        color: #000000;
+        border: 1px solid #555;
+        top: 30px;
+        right: 20px;
+        height: 40px;
+        text-align: center;
+        justify-content: center;
+        z-index: 10;
+        cursor: pointer;
+        width: 80px;
+        
+    }
+   
+    button {
+        width: 10vw;
+        bottom: 30px;
+    }
+    #generate {
+        width: 50vw;
+    }
+    #progress-one {
+        display: flex;
+        width: 60vw;
+        margin: 0 auto;
+    }
+    #progress {
+        background-color: #E0AC74;
+        height: 3px;
+        width: 60vw;
+        top: 0;
+        position: relative;
+        align-items: center;
+        box-sizing: content-box;
+        margin: 0 auto;
+    }
+}
 
 @media print {
     .input-container {
@@ -255,7 +309,7 @@ p {
         box-shadow: 0 0px 0px rgba(11, 14, 22, 0.08);
     }
     body {
-        font-family: "Playwrite AU SA", cursive;
+        font-family: "Italianno", cursive;
         max-width: 700px;
         margin: 0 auto;
         padding: 20px;
