@@ -61,12 +61,13 @@ button.disabled {
     position: relative;
     background-image: url("../resources/paper.jpg");
     padding: 20px;
+    padding-top: 4px;
     padding-bottom: 0px;
     margin-bottom: 20px;
     min-height: 400px;
     white-space: pre-line;
     line-height: 146%;
-    font-size: 28px;
+    font-size: 32px;
     font-style: normal;
 }
 #edit {
@@ -96,29 +97,36 @@ button.disabled {
     border-color: transparent;
   }
   .edit-controls {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;     
+    justify-content: flex-end;
     padding-bottom: 70px;
-    text-align: center;
+    gap: 14px; 
+    margin-right: 18px;
    
 }
 .edit-controls button {
     margin: 0;
+    margin-bottom: 40px;
 }
  #homepage {
     background-color: #161008;
-    width: 75%;
+    width: auto; 
+    padding: 12px 30px;
     margin-left: 5vw;
     font-size: 14px;
  }
+ #homepage:hover {
+    background-color: #34210e;
+  }
  #print {
     background-color: #161008;
-    width: 75%;
+    width: auto; 
+    padding: 8px 16px;
     font-size: 14px;
  }
 
  #print:hover {
-    background-color: #9b5f24;
+    background-color: #34210e;
  }
 
 .edit-controls.hidden {
@@ -131,6 +139,7 @@ button:hover {
 
 #letter {
     font-weight: 300;
+    margin: 0px;
 }
 #selectedImageContainer {
     display: flex;
@@ -233,13 +242,13 @@ p {
     transition: width 0.3s ease;
 }
 #selectedImageContainer {
-    margin: 20px auto;
-    text-align: center;
+    margin: 10px auto;
+    margin-top: -30px;
+    padding-top: 0px;
 }
 #selectedImageContainer img {
     max-width: 100%;
     max-height: 300px;
-    border-radius: 8px;
 }
 @media (min-width:850px) {
     .input-container {
@@ -251,34 +260,17 @@ p {
     }
     #letter-container {
         padding: 38px;
+        padding-top: 10px;
+        padding-bottom: 0px;
         margin: 0 auto;
         width: 50vw;
         line-height: 146%;
-        font-size: 32px;
+        font-size: 40px;
     }
     #selectedImageContainer img {
         max-width: 100%;
-        max-height: 220px;
+        max-height: 270px;
         border-radius: 8px;
-    }
-    #edit {
-        background-color: transparent;
-        position: absolute;
-        color: #000000;
-        border: 1.5px solid #555;
-        top: 30px;
-        right: 20px; 
-        z-index: 10;
-        cursor: pointer;
-        height: 40px; 
-
-        display: flex;
-        justify-content: center; 
-        align-items: center;
-        
-        text-align: center;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 14px;
     }
     button {
         width: 10vw;
@@ -292,32 +284,78 @@ p {
         width: 60vw;
         margin: 0 auto;
     }
+    #progress-one {
+        display: flex;
+        width: 60vw;
+        margin: 0 auto;
+    }
     #progress {
         background-color: #E0AC74;
         height: 3px;
-        width: 60vw;
+        width: 50vw;
         top: 0;
         position: relative;
         align-items: center;
         box-sizing: content-box;
         margin: 0 auto;
     }
-    #homepage {
-        background-color: #281D10;
-        width: 20%;
-        font-size: 14px;
-     }
-    #print {
-        background-color: #161008;
-        width: 20%;
-        font-size: 14px;
-     }
+
+    #goback {
+        top: 0px;
+        left: 200px; 
+    }
     .edit-controls {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: end;
+        display: flex;     
+        justify-content: flex-end;
         padding-bottom: 70px;
-        text-align: end;
+        gap: 14px; 
+        margin-right: 25%;
+        margin-top: 20px;
+       
+    }
+    .edit-controls button {
+        margin: 0;
+        margin-bottom: 40px;
+    }
+     #homepage {
+        background-color: #161008;
+        width: auto; 
+        padding: 12px 30px;
+        margin-left: 5vw;
+        font-size: 14px;
+     }
+     #homepage:hover {
+        background-color: #34210e;
+      }
+     #print {
+        background-color: #161008;
+        width: auto; 
+        padding: 8px 16px;
+        font-size: 14px;
+     }
+    
+     #print:hover {
+        background-color: #34210e;
+     }
+    #edit {
+        background-color: #d9c2ab;
+        position: absolute;
+        color: #000000;
+        box-shadow: 0 4px 10px rgba(103, 76, 47, 0.4);
+        top: 30px;
+        right: 0px; 
+        z-index: 10;
+        cursor: pointer;
+        height: 40px; 
+        margin-right: 15px;
+    
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
     }
 }
 
@@ -346,17 +384,24 @@ p {
     #letter-container {
         background-color: #fff;
         padding: 40px;
+
         padding-top: 10px;
         margin: 0px;
         white-space: pre-line;
         line-height: 146%;
-        font-size: 42px;
+        font-size: 44px;
       
     }
     body {
         font-family: "Italianno", cursive;
         color: #000000;
         background-color: #ffffff;
+    }
+    
+    #selectedImageContainer {
+        margin: 10px auto;
+        margin-top: -10px;
+        padding-top: 0px;
     }
  
 

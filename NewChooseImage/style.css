@@ -145,6 +145,31 @@ figure {
     }
     #images {
         display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 10px;
+        padding: 15px 0;
+        width: 100%;
+    }
+    figure {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    
+    img {
+        max-width: 35%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    figcaption {
+        margin-top: 8px;
+        text-align: center;
     }
     main {
         padding: 5px;
@@ -161,13 +186,19 @@ figure {
     #progress {
         background-color: #E0AC74;
         height: 3px;
-        width: 60vw;
+        width: 50vw;
         top: 0;
         position: relative;
         align-items: center;
         box-sizing: content-box;
         margin: 0 auto;
     }
+
+    #goback {
+        top: 0px;
+        left: 200px; 
+    }
+ 
 
 
     
