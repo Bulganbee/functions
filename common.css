@@ -8,32 +8,13 @@ body {
     background-color: #F6DBB2;
 }
 
- button {
-    display: block;
-    margin: 0 auto;
-    padding: 12px 24px;
-    background-color: #795548;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    bottom: 10px;
-    position: fixed;
-    align-items: center;
-    width: 90vw;
-    text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 h1 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     font-size: 45px;
     margin: 0;
-    margin-top: 60px;
+    padding-top: 40px;
     width: 100%;
 }
 #topdiv {

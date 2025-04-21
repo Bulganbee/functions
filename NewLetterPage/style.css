@@ -85,24 +85,28 @@ button.disabled {
     color: white;
     border-color: transparent;
   }
-#print {
-    background-color: #281D10;
-    position:relative;
-    margin-top:6px;
-    bottom: 0px;
-    left:150%;
-    width: 70%;
- }
- #print:hover {
-    background-color: #9b5f24;
- }
- .edit-controls {
+  .edit-controls {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: end;
     justify-content: end;
     padding-bottom: 70px;
+    text-align: center;
 }
+.edit-controls button {
+    margin: 0;
+}
+ #homepage {
+    background-color: #281D10;
+    width: 80%;
+    margin-left: 5vw;
+ }
+ #edit {
+    width: 80%;
+ }
+ #print:hover {
+    background-color: #9b5f24;
+ }
 
 .edit-controls.hidden {
     display: none;
@@ -144,6 +148,15 @@ button:hover {
     left: 50%;
     transform: translateX(-50%);
     z-index: 200;
+}
+h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 45px;
+    margin: 0;
+    padding-top: 40px;
+    width: 100%;
 }
  button {
     margin: 0 auto;
@@ -245,6 +258,7 @@ p {
         margin-top:10px;
         bottom: 0px;
         left:101%;
+        width: 30%;
      }
     #letter-container {
         padding: 38px;
@@ -278,6 +292,24 @@ p {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 14px;
     }
+    .edit-controls {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: end;
+        justify-content: end;
+        padding-bottom: 70px;
+        text-align: center;
+    }
+    .edit-controls button {
+        margin: 0;
+    }
+     #homepage {
+        background-color: #281D10;
+        width: 30%;
+     }
+     #edit {
+        width: 30%;
+     }
    
     button {
         width: 10vw;

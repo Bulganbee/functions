@@ -12,6 +12,7 @@
     
 }
 
+
 button {
     display: block;
     margin: 0 auto;
@@ -29,7 +30,9 @@ button {
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 button[disabled] {
     background-color: #D2BBA1;
     color: #666666;
