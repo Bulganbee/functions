@@ -64,13 +64,13 @@ button.disabled {
     background-color: transparent;
     position: absolute;
     color: #000000;
-    border: 1px solid #555;
+    border: 1.5px solid #555;
     top: 30px;
     right: 0px; 
     z-index: 10;
     cursor: pointer;
-    width: 80px;
     height: 40px; 
+    margin-right: 15px;
 
     display: flex;
     justify-content: center; 
@@ -97,13 +97,11 @@ button.disabled {
     margin: 0;
 }
  #homepage {
-    background-color: #281D10;
+    background-color: #161008;
     width: 80%;
     margin-left: 5vw;
  }
- #edit {
-    width: 80%;
- }
+
  #print:hover {
     background-color: #9b5f24;
  }
@@ -253,7 +251,7 @@ p {
         margin-bottom: 50px;
     }
     #print {
-        background-color: #281D10;
+        background-color: #161008;
         position:relative;
         margin-top:10px;
         bottom: 0px;
