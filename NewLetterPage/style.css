@@ -37,7 +37,7 @@ label {
 input[type="text"] {
     width: 100%;
     padding: 10px;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #d3baa6;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
     color: #9b9b9b;
@@ -70,10 +70,11 @@ button.disabled {
     font-style: normal;
 }
 #edit {
-    background-color: #eec397;
+    background-color: #d9c2ab;
     position: absolute;
     color: #000000;
-    border: 1.5px solid #555;
+    /* border: 1px solid #623300; */
+    box-shadow: 0 4px 10px rgba(103, 76, 47, 0.4);
     top: 30px;
     right: 0px; 
     z-index: 10;
@@ -137,7 +138,7 @@ button:hover {
     margin: 10px 0;
   }
 .selected-image {
-    max-width: 100%;
+    max-width: 90%;
     max-height: 300px; 
     object-fit: contain;
   }
