@@ -141,6 +141,11 @@ function validateInputs() {
 function updateEditButton() {
   const editButton = document.getElementById("edit");
   editButton.textContent = isEditMode ? "Save" : "Edit";
+  if (isEditMode) {
+    editButton.classList.add("save-mode");
+  } else {
+    editButton.classList.remove("save-mode");
+  }
 }
 
 function printLetter() {

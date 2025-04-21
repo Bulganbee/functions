@@ -75,6 +75,11 @@ button.disabled {
     padding: 6px 12px;
     cursor: pointer;
 }
+#edit.save-mode {
+    background-color: #674C2F; 
+    color: white;
+    border-color: #674C2F;
+  }
 #print {
     background-color: #281D10;
  }
