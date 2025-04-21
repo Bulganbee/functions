@@ -22,7 +22,7 @@
 #goback {
     position: absolute;
     color: #674C2F;
-    top: 0;
+    top: 20px;
     left: 0;
     padding-top: 30px;
     padding-left: 14px;
@@ -35,7 +35,7 @@
     height: 3px;
     width: 80vw;
     top: 0;
-    position: relative;
+    /* position: relative; */
     box-sizing: content-box;
 }
 #progress-one {
@@ -48,20 +48,16 @@
 p {
     font-size: 13px;
     color: #674C2F;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 1100;
 }
 
 #progress-fill {
     display: block;
     background-color: #674C2F;
-    width: 100%;
+    width: 50%;
     height: 100%;
     transition: width 0.3s ease;
-}
-p {
-    font-size: 13px;
-    color: #674C2F;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 h1 {
@@ -143,7 +139,6 @@ figure {
 @media (min-width:850px) {
     img {
         max-width: 35%;
-        /* display: flex; */
 	    object-fit: cover;
 	    overflow-y: hidden;
 	    overflow: clip;
