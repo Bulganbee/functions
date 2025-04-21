@@ -2,21 +2,12 @@
 
 body {
     font-family: "Italianno", cursive;
-    margin: 0 auto;
-    padding: 20px;
+    /* margin: 0 auto; */
+    /* padding: 20px; */
     color: #000000;
     background-color: #F6DBB2;
 }
 
-h1 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 45px;
-    margin: 0;
-    padding-top: 40px;
-    width: 100%;
-}
 #topdiv {
     position: fixed;
     top: 0;
