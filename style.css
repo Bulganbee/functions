@@ -1,17 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Playwrite+AU+SA:wght@100..400&display=swap');
 
-body {
-    font-family: "Playwrite AU SA", cursive;
-    max-width: 700px;
-    margin: 0 auto;
-    color: #000000;
-    background-color: #c6a981;
-}
-/* html {
-    background-image: url('/resources/Group-12.png');
-    background-repeat: no-repeat;
-    background-size: 150vw 100vh;
-} */
+
 h1 {
     font-size: 22px;
     top: 10%;

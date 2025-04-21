@@ -7,8 +7,8 @@
 .input-container {
     background-color: #fbedd9;
     padding: 20px;
-    margin-top: 70px;
-    margin-bottom: 20px;
+    margin-top: 90px;
+    margin-bottom: 50px;
     box-shadow: 0 4px 8px rgba(11, 14, 22, 0.08);
 }
 
@@ -52,26 +52,33 @@ button.disabled {
     position: relative;
     background-image: url("../resources/paper.jpg");
     padding: 20px;
+    padding-bottom: 0px;
     margin-bottom: 20px;
     min-height: 400px;
     white-space: pre-line;
-    line-height: 1.6;
-    font-size: 18px;
+    line-height: 146%;
+    font-size: 28px;
     font-style: normal;
-    box-shadow: 0 4px 8px rgba(11, 14, 22, 0.08);
 }
 #edit {
-    margin: 1px;
-    height: 40px;
     background-color: transparent;
     position: absolute;
     color: #000000;
     border: 1px solid #555;
-    top: 40px;
-    right: 20px;
+    top: 30px;
+    right: 0px; 
     z-index: 10;
-    padding: 6px 12px;
     cursor: pointer;
+    width: 80px;
+    height: 40px; 
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
 }
 #edit.save-mode {
     background-color: #00a519; 
@@ -80,6 +87,11 @@ button.disabled {
   }
 #print {
     background-color: #281D10;
+    position:relative;
+    margin-top:6px;
+    bottom: 0px;
+    left:150%;
+    width: 70%;
  }
  #print:hover {
     background-color: #9b5f24;
@@ -105,8 +117,8 @@ button:hover {
 }
 #selectedImageContainer {
     display: flex;
-    justify-content: center;
-    margin: 20px 0;
+    justify-content: end;
+    margin: 10px 0;
   }
 .selected-image {
     max-width: 100%;
@@ -146,14 +158,6 @@ button:hover {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
  }
- 
-body {
-    font-family: "Italianno", cursive;
-    margin: 0 auto;
-    padding: 20px;
-    color: #000000;
-    background-color: #F6DBB2;
-}
 h1 {
     position: absolute;
     left: 50%;
@@ -162,7 +166,6 @@ h1 {
     margin: 0;
     margin-top: 60px;
     width: 100%;
-   
 }
 #topdiv {
     position: absolute;
@@ -233,15 +236,27 @@ p {
         padding: 20px;
         margin: 0 auto;
         width: 50vw;
-        margin-top: 100px;
-        margin-bottom: 20px;
+        margin-top: 120px;
+        margin-bottom: 50px;
     }
+    #print {
+        background-color: #281D10;
+        position:relative;
+        margin-top:10px;
+        bottom: 0px;
+        left:101%;
+     }
     #letter-container {
-        padding: 32px;
+        padding: 38px;
         margin: 0 auto;
         width: 50vw;
         line-height: 146%;
         font-size: 32px;
+    }
+    #selectedImageContainer img {
+        max-width: 100%;
+        max-height: 220px;
+        border-radius: 8px;
     }
     #edit {
         background-color: transparent;
@@ -304,22 +319,27 @@ p {
     #print {
         display: none;
     }
+    #topdiv {
+        display: none;
+    }
+    #homepage {
+        display: none;
+    }
     #letter-container {
         background-color: #fff;
-        padding: 0px;
-        min-height: 400px;
+        padding: 40px;
+        padding-top: 10px;
+        margin: 0px;
         white-space: pre-line;
-        line-height: 1.6;
-        font-size: 24px;
-        box-shadow: 0 0px 0px rgba(11, 14, 22, 0.08);
+        line-height: 146%;
+        font-size: 42px;
+      
     }
     body {
         font-family: "Italianno", cursive;
-        max-width: 700px;
-        margin: 0 auto;
-        padding: 20px;
         color: #000000;
         background-color: #ffffff;
     }
+ 
 
 }
