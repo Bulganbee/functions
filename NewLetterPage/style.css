@@ -249,14 +249,19 @@ p {
         color: #000000;
         border: 1px solid #555;
         top: 30px;
-        right: 20px;
-        height: 40px;
-        text-align: center;
-        justify-content: center;
+        right: 20px; 
         z-index: 10;
         cursor: pointer;
         width: 80px;
+        height: 40px; 
+    
+        display: flex;
+        justify-content: center; 
+        align-items: center;
         
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
     }
    
     button {
