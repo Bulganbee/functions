@@ -117,7 +117,7 @@ main {
     margin-top: 90px;
 }
 img {
-    max-width: 70%;
+    max-width: 90%;
     padding: 5px;
     object-fit: cover;
 }
@@ -129,6 +129,14 @@ img:hover {
 }
 button:hover:not([disabled]) {
     background-color: #674C2F;
+}
+figcaption {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+figure {
+    margin: 5px;
 }
 
 @media (min-width:850px) {
