@@ -278,6 +278,7 @@ p {
         width: 50vw;
         line-height: 146%;
         font-size: 40px;
+        font-weight: 800;
     }
     #selectedImageContainer img {
         max-width: 100%;
