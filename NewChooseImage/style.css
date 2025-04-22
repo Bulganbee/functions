@@ -138,59 +138,21 @@ figure {
 }
 
 @media (min-width:850px) {
-    body {
-        overflow-x: hidden; 
-    position: relative;
-    }
+ 
     img {
         width: auto; 
         height: auto;
-        /* object-fit: cover; */
     }
-    
-    #topdiv {
-        position: sticky; 
-        top: 0;
-        width: 100%;
-        z-index: 10;
-        overflow-x: hidden;
+    main {
+        overflow-x: auto; 
     }
-    
     #images {
         width: 200%;
         display: flex;
-        overflow-x: auto; 
         gap: 2px; 
         padding: 10px 0;
         padding-left: 15px;
-        box-sizing: border-box;
     }
-    
-    figure {
-        /* flex: 0 0 auto;  */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        width: auto; 
-        padding: 0;
-    }
-    figure:first-child {
-        margin-left: 0; 
-    }
-    
-    figcaption {
-        margin-top: 8px;
-        text-align: center;
-        width: 180px; 
-    }
-    main {
-        padding: 0;
-    width: 100%;
-    overflow: visible;
-    }
-    
-    
     button {
         width: 40vw;
         bottom: 30px;

@@ -75,11 +75,11 @@ button.disabled {
     font-style: normal;
 }
 #edit {
-    background-color: #d9c2ab;
+    background-color: #795548;
+    color: #f4f4f4;
     position: absolute;
-    color: #000000;
     /* border: 1px solid #623300; */
-    box-shadow: 0 4px 10px rgba(103, 76, 47, 0.4);
+    /* box-shadow: 0 4px 10px rgba(103, 76, 47, 0.4); */
     top: 30px;
     right: 0px; 
     z-index: 10;
@@ -351,10 +351,10 @@ p {
         background-color: #34210e;
      }
     #edit {
-        background-color: #d9c2ab;
+        background-color: #795548;
+        color: #f4f4f4;
         position: absolute;
-        color: #000000;
-        box-shadow: 0 4px 10px rgba(103, 76, 47, 0.4);
+        /* box-shadow: 0 4px 10px rgba(103, 76, 47, 0.4); */
         top: 30px;
         right: 0px; 
         z-index: 10;
@@ -398,12 +398,12 @@ p {
     #letter-container {
         background-color: #fff;
         padding: 40px;
-
         padding-top: 10px;
         margin: 0px;
         white-space: pre-line;
         line-height: 146%;
         font-size: 44px;
+        padding-bottom: 0px;
       
     }
     body {
@@ -413,7 +413,7 @@ p {
     }
     
     #selectedImageContainer {
-        margin: 10px auto;
+        /* margin: 10px auto; */
         margin-top: -10px;
         padding-top: 0px;
     }
