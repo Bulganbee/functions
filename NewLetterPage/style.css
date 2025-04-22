@@ -63,7 +63,7 @@ button.disabled {
 #letter-container {
     position: relative;
     background-image: url("../resources/paper.jpg");
-    padding: 20px;
+    padding: 30px;
     padding-top: 4px;
     padding-bottom: 0px;
     margin-bottom: 20px;
