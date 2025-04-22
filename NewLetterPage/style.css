@@ -71,6 +71,7 @@ button.disabled {
     white-space: pre-line;
     line-height: 146%;
     font-size: 32px;
+    font-weight: 800;
     font-style: normal;
 }
 #edit {
@@ -84,6 +85,7 @@ button.disabled {
     z-index: 10;
     cursor: pointer;
     height: 40px; 
+    font-weight: 400;
     margin-right: 15px;
 
     display: flex;

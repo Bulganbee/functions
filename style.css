@@ -27,6 +27,7 @@ p {
     font-size: 18px;
     line-height: 90%;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 button {
@@ -69,6 +70,7 @@ i {
 #img2 {
     display: none;
 }
+
 
 
 @media (min-width:1000px) {
