@@ -129,11 +129,12 @@ button:hover:not([disabled]) {
 }
 figcaption {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     margin: 0;
 }
 figure {
     margin: 5px;
+    margin-bottom: 10px;
 }
 
 @media (min-width:850px) {
