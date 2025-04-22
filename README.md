@@ -1,7 +1,7 @@
 <h1>Love Letter Generator</h1>
 <p>
 The <i>Love Letter Generator</i> is a project from the <i>Typography and Interaction</i> program within MPS Communication Design at Parsons, led by professors Michael Fehrenbach and Eric Li.</p>
-<p>The project is part of <i>If All You Have Is a Hammer, Everything Looks Like a Nail</i> challenge, where graduate students were asked to design a solution to any problem that involves user input and generates an output.</p>
+<p>The work is part of <i>If All You Have Is a Hammer, Everything Looks Like a Nail</i> challenge, where graduate students were asked to design a solution to any problem that involves user input and generates an output.</p>
 <h2>Problem statement</h2>
 <p>If you’re deeply in love, how do you write a love letter that expresses the connection on a spiritual level?</p>
 <h2>Solution: Rumi</h2>
