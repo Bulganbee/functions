@@ -10,7 +10,7 @@ The <i>Love Letter Generator</i> is a project from the <i>Typography and Interac
 <h2>Who is Rumi?</h2>
 <p>Rumi was a 13th-century Persian poet, mystic, and Sufi philosopher known for his powerful poems about love, spirituality, and the human connection to the divine.</p>
 <img width="400" alt="Rumi" src="https://github.com/user-attachments/assets/5fb23ec2-2b90-438e-a044-0dc62f222878" />
-<label>Image from:</label>
+
 
 
 <h2>About me</h2>
