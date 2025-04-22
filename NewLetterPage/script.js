@@ -11,7 +11,7 @@ function generateLetter() {
     // Define grammar rules
     const grammar = {
         letter: [
-            "{recipientTerm}, In your {noun1}, I find my {noun2}. You are the {noun3} that {verb1} my {noun4} and {verb1} my {noun4}. {phrase1} with you is a {phrase2} to {phrase3}. {phrase4} as the {phrase5}. {phrase6} is the {noun5} we {phrase7}. ",
+            "{recipientTerm}, In your {noun1}, I find my {noun2}. You are the {noun3} that {verb1} my {noun4} and {verb1} my {nounplus}. {phrase1} with you is a {phrase2} to {phrase3}. {phrase4} as the {phrase5}. {phrase6} is the {noun5} we {phrase7}. ",
         ],
      
         phrase: ["{subject} {verb} {object}"],
@@ -19,19 +19,22 @@ function generateLetter() {
         
         recipientTerm: [recipientName], 
         noun1: [
-            "presence", "fragrance", "scent", "beauty", "veil", "face", "spirit", "lips", "eyes", "heart", "soul", "presence" 
+            "presence", "fragrance", "scent", "beauty", "veil", "face", "spirit", "lips", "eyes", "soul", 
         ],
         noun2: [
-          "self", "heart", "gift", "world", "idol", "spirit", "fire", "soul", "oneness", "beginning", "moon", "lord", "god" 
+          "self", "heart", "gift", "world", "fire", "soul", "oneness", "beginning", "moon", "lord", "god" 
         ],
         noun3: [
             "spark", "being", "oneness", "gift", "love", "sky", "world" 
         ],
         noun4: [
-            "soul", "spirit", "passion", "fire", "heart"
+            "light", "ocean", "universe", "fire", "awakening"
         ],
         noun5: [
             "truth", "fire", "light", "reason", "guidance"
+        ],
+        nounplus: [
+            "wisdom", "sun", "dark wine", "cage", "rosegarden"
         ],
         verb1: [
             "lights", "guides", "touches", "embraces", "enters", "renews", "melts", "calms", "rouses"
@@ -55,7 +58,7 @@ function generateLetter() {
             "Our reunion", "Our love", "Our meeting", "Our oneness"
         ],
         phrase7: [
-            "seek", "meant to find", "stumble upon", "cherish", "bestow upon"
+            "seek", "meant to find", "stumble upon", "bestow upon", "seek", 
         ],
     };
   

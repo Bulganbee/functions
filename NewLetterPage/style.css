@@ -24,6 +24,7 @@ h1 {
     padding-top: 90px;
     width: 100%;
 }
+
 .input-group {
     margin-bottom: 15px;
 }
@@ -74,12 +75,11 @@ button.disabled {
     font-weight: 800;
     font-style: normal;
 }
+
 #edit {
     background-color: #795548;
     color: #f4f4f4;
     position: absolute;
-    /* border: 1px solid #623300; */
-    /* box-shadow: 0 4px 10px rgba(103, 76, 47, 0.4); */
     top: 30px;
     right: 0px; 
     z-index: 10;
@@ -404,6 +404,7 @@ p {
         white-space: pre-line;
         line-height: 146%;
         font-size: 44px;
+        font-weight: 800;
         padding-bottom: 0px;
       
     }
