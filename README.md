@@ -5,7 +5,7 @@ The <i>Love Letter Generator</i> is a project from the <i>Typography and Interac
 <h2>Problem statement</h2>
 <p>If you are madly in love, how do you create a spiritual level love letter?</p>
 <h2>Solution: Rumi</h2>
-<p>Back when I was in high school, I discovered Rumi's poems about love and spiritualism. What I love about his work is how he is able to define love as almost spiritual experience, rathen than just the physical. For this project, I used Rumi's poems to create a text generator using Javascript language. I am taking a Computational Form class and in our <i>Text</i> chapter, I learned to create a random text generator, which you can control with structure, vocabulary, and grammar rules. </p>
+<p>Back in high school, I came across Rumi’s poetry and was really drawn to the way he writes about love and spirituality. What I found most compelling was how he describes love as a deeply spiritual experience, not just something physical. For this project, I created a text generator using JavaScript, inspired by Rumi’s poems. I’m currently taking a Computational Form class, and during our unit on text, I learned how to build a random text generator that can be controlled by changing the structure, vocabulary, and grammar rules.</p>
 <img width="500" alt="Rumi" src="https://github.com/user-attachments/assets/5fb23ec2-2b90-438e-a044-0dc62f222878" />
 <label>Image from:</label>
 
