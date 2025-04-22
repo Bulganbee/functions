@@ -12,6 +12,9 @@
     margin-bottom: 50px;
     box-shadow: 0 4px 8px rgba(11, 14, 22, 0.08);
 }
+#rumistamp {
+    display: none;
+}
 h1 {
     position: absolute;
     left: 50%;
@@ -250,6 +253,13 @@ p {
     max-width: 100%;
     max-height: 300px;
 }
+#rumistamp {
+    /* top: 5px;
+    left: 10px; */
+    position: absolute;
+    width: auto;
+    /* text-align: center; */
+}
 @media (min-width:850px) {
     .input-container {
         padding: 20px;
@@ -272,6 +282,7 @@ p {
         max-height: 270px;
         border-radius: 8px;
     }
+
     button {
         width: 10vw;
         bottom: 30px;
@@ -381,6 +392,7 @@ p {
     #homepage {
         display: none;
     }
+
     #letter-container {
         background-color: #fff;
         padding: 40px;

@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Playwrite+AU+SA:wght@100..400&display=swap');
 
-
 #topdiv {
     position: absolute;
     top: 0;
@@ -18,6 +17,7 @@
     padding-bottom: 54px;
     text-align: center;
 }
+
 
 #goback {
     position: absolute;
@@ -104,11 +104,11 @@ main {
     text-align: center;
 }
 #images {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     text-align: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin-bottom: 70px;
     margin-top: 110px;
 }
@@ -137,43 +137,59 @@ figure {
 }
 
 @media (min-width:850px) {
+    body {
+        overflow-x: hidden; 
+    position: relative;
+    }
     img {
-        max-width: 35%;
-	    object-fit: cover;
-	    overflow-y: hidden;
-	    overflow: clip;
+        width: auto; 
+        height: auto;
+        /* object-fit: cover; */
     }
-    #images {
-        display: flex;
-        flex-direction: row;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        gap: 10px;
-        padding: 15px 0;
+    
+    #topdiv {
+        position: sticky; 
+        top: 0;
         width: 100%;
+        z-index: 10;
+        overflow-x: hidden;
     }
+    
+    #images {
+        width: 200%;
+        display: flex;
+        overflow-x: auto; 
+        gap: 2px; 
+        padding: 10px 0;
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+    
     figure {
-        flex: 0 0 auto;
-        scroll-snap-align: start;
+        /* flex: 0 0 auto;  */
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0;
+        width: auto; 
+        padding: 0;
     }
-    
-    img {
-        max-width: 35%;
-        height: auto;
-        object-fit: cover;
+    figure:first-child {
+        margin-left: 0; 
     }
     
     figcaption {
         margin-top: 8px;
         text-align: center;
+        width: 180px; 
     }
     main {
-        padding: 5px;
+        padding: 0;
+    width: 100%;
+    overflow: visible;
     }
+    
+    
     button {
         width: 40vw;
         bottom: 30px;
@@ -198,6 +214,7 @@ figure {
         top: 0px;
         left: 200px; 
     }
+   
  
 
 
