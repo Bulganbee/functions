@@ -2,9 +2,13 @@
 
 :root {
 	--root-size-h1: 23px;
+    --root-size-h: 22.5px;
+    --root-size-i: 20px;
+    --root-size-head: 25px;
 	--root-size-h2: 14px;
     --root-size-p: 14px;
     --root-size-p2: 16px;
+    --root-size-p3: 16px;
 	--root-size-letter: 8.75px;
 	--line-height-letter: 140%; 
     --root-padding: 10px;
@@ -63,7 +67,8 @@ body {
 }
 
 p {
-    font-size: 13px;
+    font-size: var(--root-size-p);
     color: #674C2F;
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
+
