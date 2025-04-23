@@ -191,54 +191,6 @@ button:hover {
     font-size: 16px;
  }
 
-#topdiv {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #F6DBB2;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box;
-    z-index: 1000;
-    padding: 20px;
-    padding-bottom: 54px;
-    text-align: center;
-}
-
-/* #goback {
-    position: absolute;
-    color: #674C2F;
-    top: 20px;
-    left: 0;
-    padding-top: 30px;
-    padding-left: 14px;
-    font-size: 24px;
-    cursor: pointer;
-} */
-
-/* #progress {
-    background-color: #E0AC74;
-    height: 3px;
-    width: 80vw;
-    top: 0;
-    position: relative;
-    box-sizing: content-box;
-}
-#progress-one {
-    display: flex;
-    gap: 10px;
-    width: 90vw;
-    justify-content: center;
-    align-items: center;
-} */
-/* p {
-    font-size: 13px;
-    color: #674C2F;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
-} */
-
 #progress-fill {
     display: block;
     background-color: #674C2F;

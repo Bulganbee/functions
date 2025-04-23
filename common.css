@@ -22,25 +22,23 @@ body {
 }
 
 #topdiv {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #F6DBB2;
+    background: linear-gradient(to bottom, #F6DBB2, #f0dec3);
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    z-index: 1000;
     padding: calc(var(--root-padding) * 2);
-    padding-bottom: calc(var(--root-padding-bottom) * 2);
+    padding-bottom: 0px;
     text-align: center;
 }
 
 #goback {
     position: absolute;
     color: #674C2F;
-    top: 0;
+    top: 20px;
     left: 0;
     padding-top: calc(var(--root-padding-top) * 3);
     padding-left: calc(var(--root-padding-left) * 2);

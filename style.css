@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Playwrite+AU+SA:wght@100..400&display=swap');
 
-
+body {
+    background: linear-gradient(to bottom, #F6DBB2, #f0dec3);
+}
 #branch {
     max-height: 240px;
     position: absolute;
