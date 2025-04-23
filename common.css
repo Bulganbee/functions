@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 
+:root {
+	--root-size-h1: 23px;
+	--root-size-h2: 14px;
+    --root-size-p: 14px;
+    --root-size-p2: 16px;
+	--root-size-letter: 8.75px;
+	--line-height-letter: 140%; 
+    --root-padding: 10px;
+    --root-padding-top: 10px;
+    --root-padding-bottom: 22px;
+    --root-padding-left: 7px;
+    --root-margin: 10px;
+    --root-margin-bottom: 15px;
+}
+
 body {
     font-family: "Italianno", cursive;
     color: #000000;
@@ -17,8 +32,8 @@ body {
     justify-content: space-between;
     box-sizing: border-box;
     z-index: 1000;
-    padding: 20px;
-    padding-bottom: 44px;
+    padding: calc(var(--root-padding) * 2);
+    padding-bottom: calc(var(--root-padding-bottom) * 2);
     text-align: center;
 }
 
@@ -27,9 +42,9 @@ body {
     color: #674C2F;
     top: 0;
     left: 0;
-    padding-top: 30px;
-    padding-left: 14px;
-    font-size: 24px;
+    padding-top: calc(var(--root-padding-top) * 3);
+    padding-left: calc(var(--root-padding-left) * 2);
+    font-size: var(--root-size-h1);
     cursor: pointer;
 }
 
@@ -48,6 +63,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 p {
     font-size: 13px;
     color: #674C2F;

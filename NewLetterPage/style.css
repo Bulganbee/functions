@@ -6,10 +6,10 @@
 }
 .input-container {
     background-color: #fbedd9;
-    padding: 20px;
-    margin: 20px;
-    margin-top: 150px;
-    margin-bottom: 50px;
+    padding: calc(var(--root-padding) * 2);
+    margin: calc(var(--root-margin) * 2);
+    margin-top: calc(var(--root-margin) * 12);
+    margin-bottom: calc(var(--root-margin) * 5);
     box-shadow: 0 4px 8px rgba(11, 14, 22, 0.08);
 }
 #rumistamp {
@@ -19,31 +19,31 @@ h1 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 45px;
+    font-size: calc(var(--root-size-h1) * 2);
     margin: 0;
-    padding-top: 90px;
+    padding-top: calc(var(--root-padding-top) * 9);
     width: 100%;
 }
 
 .input-group {
-    margin-bottom: 15px;
+    margin-bottom: var(--root-margin-bottom);
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: calc(var(--root-margin-bottom) - 10);
     font-weight: medium;
     color: #000000;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
+    font-size: var(--root-size-p);
 }
 
 input[type="text"] {
     width: 100%;
-    padding: 10px;
+    padding: var( --root-padding);
     border-bottom: 1px solid #d3baa6;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
+    font-size: var(--root-size-p);
     color: #9b9b9b;
 }
 
@@ -64,14 +64,14 @@ button.disabled {
 #letter-container {
     position: relative;
     background-image: url("../resources/paper.jpg");
-    padding: 30px;
-    padding-top: 4px;
+    padding: calc(var(--root-padding) * 3);
+    padding-top: calc(var(--root-padding) - 6);
     padding-bottom: 0px;
-    margin-bottom: 20px;
+    margin-bottom: calc(var(--root-margin) * 2);
     min-height: 400px;
     white-space: pre-line;
     line-height: 146%;
-    font-size: 32px;
+    font-size: calc(var(--root-size-p2) * 2);
     font-weight: 800;
     font-style: normal;
 }
@@ -94,7 +94,7 @@ button.disabled {
     
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
+    font-size: var(--root-size-p);
 }
 #edit.save-mode {
     background-color: #00a519; 
@@ -104,7 +104,7 @@ button.disabled {
   .edit-controls {
     display: flex;     
     justify-content: flex-end;
-    padding-bottom: 70px;
+    padding-bottom: calc(var(--root-padding) * 7);
     gap: 14px; 
     margin-right: 18px;
    
@@ -207,7 +207,7 @@ button:hover {
     text-align: center;
 }
 
-#goback {
+/* #goback {
     position: absolute;
     color: #674C2F;
     top: 20px;
@@ -216,9 +216,9 @@ button:hover {
     padding-left: 14px;
     font-size: 24px;
     cursor: pointer;
-}
+} */
 
-#progress {
+/* #progress {
     background-color: #E0AC74;
     height: 3px;
     width: 80vw;
@@ -232,12 +232,12 @@ button:hover {
     width: 90vw;
     justify-content: center;
     align-items: center;
-}
-p {
+} */
+/* p {
     font-size: 13px;
     color: #674C2F;
     font-family:Verdana, Geneva, Tahoma, sans-serif
-}
+} */
 
 #progress-fill {
     display: block;
@@ -255,13 +255,7 @@ p {
     max-width: 100%;
     max-height: 300px;
 }
-#rumistamp {
-    /* top: 5px;
-    left: 10px; */
-    position: absolute;
-    width: auto;
-    /* text-align: center; */
-}
+
 @media (min-width:850px) {
     .input-container {
         padding: 20px;
